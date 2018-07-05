@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="input.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<link rel="stylesheet" type="text/css" href="avatar.css">
+<style>
+/* Full-width input fields */
+form {
+	border: 3px solid #f1f1f1;
+	background-color: #fffff0;
+	width: 500px;
+	margin: 10% auto 10% auto;
+	/* 10% from the top, 15% from the bottom and centered */
+}
+
+.signupbtn {
+	float: auto;
+	width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+	padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+	.signupbtn {
+		width: 100%;
+	}
+}
+</style>
+<title>Wordy Sign Up</title>
+</head>
+<body background="Images/wordy1.png">
+	<form action="SignUpPwd.jsp" method="get">
+		<div dir="rtl">
+			<a href="SignIn.html">...Already Registered?Sign In Here</a>
+		</div>
+		<h2 align="center">SignUp For Wordy</h2>
+		<div class="imgcontainer">
+			<img src="Images/avatars/avatar21.jpg" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+			<label><b>Name</b></label> <input type="Text"
+				placeholder="Enter Name" name="Name" required> <label><b>E-Mail
+					Id</b></label> <input type="Text" placeholder="Enter E-Mail Id" name="Email"
+				required>
+		</div>
+
+		<div class="clearfix">
+			<button type="submit" class="signupbtn">Sign
+				Up</button>
+		</div>
+	</form>
+</body>
+</html>

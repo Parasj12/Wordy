@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Wordy SignUp/Page2</title>
+<link rel="stylesheet" type="text/css" href="input.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<link rel="stylesheet" type="text/css" href="avatar.css">
+<style>
+form {
+	border: 3px solid #f1f1f1;
+	background-color: #fffff0;
+	width: 40%;
+	margin: 5% auto auto auto;
+	/* 5% from the top, 15% from the bottom and centered */
+}
+
+.deletebtn {
+	float: auto;
+	width: 100%;
+}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+</style>
+</head>
+<body background="Images/wordy1.png">
+
+	<form action="deleteprofile">
+		<h2 align="center">Want to Delete Profile!</h2>
+		<div class="container">
+			<div class="imgcontainer">
+				<img id="pic" src="Images/avatars/avatar21.jpg" alt="Avatar"
+					class="avatar">
+			</div>
+
+			<div id="verify">
+				<label><b>Enter Password to verify your Identity</b></label> <input
+					type="password" placeholder="******" name="pwd">
+			</div>
+
+			<div class="clearfix">
+				<button type="submit" onclick="" class="deletebtn">Delete
+					Your Account</button>
+			</div></div>
+	</form>
+
+</body>
+</html>

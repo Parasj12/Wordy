@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Wordy SignUp/Page2</title>
+<link rel="stylesheet" type="text/css" href="input.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<link rel="stylesheet" type="text/css" href="avatar.css">
+<style>
+form {
+	border: 3px solid #f1f1f1;
+	background-color: #fffff0;
+	width: 60%;
+	margin: 0% auto auto auto;
+	/* 5% from the top, 15% from the bottom and centered */
+}
+
+.uploadbtn {
+	width: 20%;
+}
+
+.savedetbtn {
+	float: auto;
+	width: 100%;
+}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+</style>
+</head>
+<body background="Images/wordy1.png" >
+
+	<form action="Update">
+		<h2 align="center">Update Profile Details</h2>
+		
+		<div class="container">
+			<div class="imgcontainer">
+				<img id="pic" src="Images/avatars/avatar21.jpg" alt="Avatar" class="avatar">
+			</div>
+
+			<label><b>Enter User Id*</b></label> 
+				<input type="text" placeholder="Enter User Id" name="uid" required> 
+				
+			<label><b>Enter	Your Country</b></label> 
+				<input type="text" placeholder="***Country***" name="country"> 
+				
+			<label><b>Enter About Profession</b></label> 
+				<input type="text" placeholder="**Profession**" name="profession"> 
+			
+			<label><b>Enter	About Yourself</b></label> 
+				<input type="text" placeholder="**About You***" name="about"> 
+				
+			<label><b>Enter Facebook Profile URL</b></label>
+				<input type="text" placeholder="***Facebook***" name="fb"> 
+			
+			<label><b>Enter	Twitter Handle URL </b></label> 
+				<input type="text" placeholder="***twitter***" name="twitter"> 
+				
+			<label><b>Enter Instagram Id</b></label> 
+				<input type="text" placeholder="***Instagram***" name="insta">
+
+			<div dir="rtl">fields marked (*) are mandetory</div>
+		</div>
+
+		<div class="clearfix">
+			<button type="submit" onclick="" class="savedetbtn">Save
+				Details</button>
+		</div>
+	</form>
+</body>
+</html>
